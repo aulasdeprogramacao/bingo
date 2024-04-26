@@ -8,7 +8,7 @@ th {
  font-weight:bold;
  text-align: center;
  vertical-align: center;
- width: 62px;
+ width: 70px;
 }
 td {
  padding: 5;
@@ -16,7 +16,7 @@ td {
  font-weight: bold;
  text-align: center;
  vertical-align: center;
- width:62px;
+ width:70px;
 }
 th.B {
   background-color: red;
@@ -40,8 +40,8 @@ th.O {
 }
 input {
  border:0;
- padding: 15;
- font-size: 30;
+ padding: 10;
+ font-size: 32;
  font-weight: bold;
  text-align: center;
  vertical-align: center;
@@ -74,11 +74,11 @@ input.INc {
 }
 td.Gc {
   background-color: Yellow;
-  color: Orange;
+  color: OrangeRed;
 }
 input.IGc {
   background-color: Yellow;
-  color: Orange;
+  color: OrangeRed;
 }
 td.Oc {
   background-color: Orchid;
@@ -101,13 +101,99 @@ input.IOc {
             <th class="O">O</th>
         </tr>
         <tr>
-            <td class="Bc"><input class="IBc" type="text" value="1" size=2 maxlength=2 readonly disabled id="b1"/></td>
-            <td class="Ic"><input class="IIc" type="text" value="16" size=2 maxlength=2 readonly disabled id="i1"/></td>
-            <td class="Nc"><input class="INc" type="text" value="31" size=2 maxlength=2 readonly disabled id="n1"/></td>
-            <td class="Gc"><input class="IGc" type="text" value="46" size=2 maxlength=2 readonly disabled id="g1"/></td>
-            <td class="Oc"><input class="IOc" type="text" value="61" size=2 maxlength=2 readonly disabled id="o1"/></td>
+            <td class="Bc"><input class="IBc" type="text" value="0" size=2 maxlength=2 readonly disabled id="b1"/></td>
+            <td class="Ic"><input class="IIc" type="text" value="0" size=2 maxlength=2 readonly disabled id="i1"/></td>
+            <td class="Nc"><input class="INc" type="text" value="0" size=2 maxlength=2 readonly disabled id="n1"/></td>
+            <td class="Gc"><input class="IGc" type="text" value="0" size=2 maxlength=2 readonly disabled id="g1"/></td>
+            <td class="Oc"><input class="IOc" type="text" value="0" size=2 maxlength=2 readonly disabled id="o1"/></td>
+        </tr>
+        <tr>
+            <td class="Bc"><input class="IBc" type="text" value="0" size=2 maxlength=2 readonly disabled id="b2"/></td>
+            <td class="Ic"><input class="IIc" type="text" value="0" size=2 maxlength=2 readonly disabled id="i2"/></td>
+            <td class="Nc"><input class="INc" type="text" value="0" size=2 maxlength=2 readonly disabled id="n2"/></td>
+            <td class="Gc"><input class="IGc" type="text" value="0" size=2 maxlength=2 readonly disabled id="g2"/></td>
+            <td class="Oc"><input class="IOc" type="text" value="0" size=2 maxlength=2 readonly disabled id="o2"/></td>
+        </tr>
+        <tr>
+            <td class="Bc"><input class="IBc" type="text" value="0" size=2 maxlength=2 readonly disabled id="b3"/></td>
+            <td class="Ic"><input class="IIc" type="text" value="0" size=2 maxlength=2 readonly disabled id="i3"/></td>
+            <td class="Nc"><input class="INc" type="text" value=&#128540 size=2 maxlength=2 readonly disabled id="n3"/></td>
+            <td class="Gc"><input class="IGc" type="text" value="0" size=2 maxlength=2 readonly disabled id="g3"/></td>
+            <td class="Oc"><input class="IOc" type="text" value="0" size=2 maxlength=2 readonly disabled id="o3"/></td>
+        </tr>
+        <tr>
+            <td class="Bc"><input class="IBc" type="text" value="0" size=2 maxlength=2 readonly disabled id="b4"/></td>
+            <td class="Ic"><input class="IIc" type="text" value="0" size=2 maxlength=2 readonly disabled id="i4"/></td>
+            <td class="Nc"><input class="INc" type="text" value="0" size=2 maxlength=2 readonly disabled id="n4"/></td>
+            <td class="Gc"><input class="IGc" type="text" value="0" size=2 maxlength=2 readonly disabled id="g4"/></td>
+            <td class="Oc"><input class="IOc" type="text" value="0" size=2 maxlength=2 readonly disabled id="o4"/></td>
+        </tr>
+        <tr>
+            <td class="Bc"><input class="IBc" type="text" value="0" size=2 maxlength=2 readonly disabled id="b5"/></td>
+            <td class="Ic"><input class="IIc" type="text" value="0" size=2 maxlength=2 readonly disabled id="i5"/></td>
+            <td class="Nc"><input class="INc" type="text" value="0" size=2 maxlength=2 readonly disabled id="n5"/></td>
+            <td class="Gc"><input class="IGc" type="text" value="0" size=2 maxlength=2 readonly disabled id="g5"/></td>
+            <td class="Oc"><input class="IOc" type="text" value="0" size=2 maxlength=2 readonly disabled id="o5"/></td>
         </tr>
     </table>
+    <br><br>
+    <button onclick="gerar()">Gerar Números</button>
 </center>
+<script>
+function gerar() {
+   var x=parseInt(Math.random() * (15 - 1) + 1);
+   document.getElementById("b1").value=x;
+   var x=parseInt(Math.random() * (30 - 16) + 16);
+   document.getElementById("i1").value=x;
+   var x=parseInt(Math.random() * (45 - 31) + 31);
+   document.getElementById("n1").value=x;
+   var x=parseInt(Math.random() * (60 - 46) + 46);
+   document.getElementById("g1").value=x;
+   var x=parseInt(Math.random() * (75 - 61) + 61);
+   document.getElementById("o1").value=x;
+
+   var x=parseInt(Math.random() * (15 - 1) + 1);
+   document.getElementById("b2").value=x;
+   var x=parseInt(Math.random() * (30 - 16) + 16);
+   document.getElementById("i2").value=x;
+   var x=parseInt(Math.random() * (45 - 31) + 31);
+   document.getElementById("n2").value=x;
+   var x=parseInt(Math.random() * (60 - 46) + 46);
+   document.getElementById("g2").value=x;
+   var x=parseInt(Math.random() * (75 - 61) + 61);
+   document.getElementById("o2").value=x;
+
+   var x=parseInt(Math.random() * (15 - 1) + 1);
+   document.getElementById("b3").value=x;
+   var x=parseInt(Math.random() * (30 - 16) + 16);
+   document.getElementById("i3").value=x;
+   var x=parseInt(Math.random() * (60 - 46) + 46);
+   document.getElementById("g3").value=x;
+   var x=parseInt(Math.random() * (75 - 61) + 61);
+   document.getElementById("o3").value=x;
+
+   var x=parseInt(Math.random() * (15 - 1) + 1);
+   document.getElementById("b4").value=x;
+   var x=parseInt(Math.random() * (30 - 16) + 16);
+   document.getElementById("i4").value=x;
+   var x=parseInt(Math.random() * (45 - 31) + 31);
+   document.getElementById("n4").value=x;
+   var x=parseInt(Math.random() * (60 - 46) + 46);
+   document.getElementById("g4").value=x;
+   var x=parseInt(Math.random() * (75 - 61) + 61);
+   document.getElementById("o4").value=x;
+
+   var x=parseInt(Math.random() * (15 - 1) + 1);
+   document.getElementById("b5").value=x;
+   var x=parseInt(Math.random() * (30 - 16) + 16);
+   document.getElementById("i5").value=x;
+   var x=parseInt(Math.random() * (45 - 31) + 31);
+   document.getElementById("n5").value=x;
+   var x=parseInt(Math.random() * (60 - 46) + 46);
+   document.getElementById("g5").value=x;
+   var x=parseInt(Math.random() * (75 - 61) + 61);
+   document.getElementById("o5").value=x;
+}
+</script>
 </body>
 </html>
